@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static1 {
+            position: static;
+            border: 3px solid purple;
+        }
+
+        .relative1 {
+            position: relative;
+            border: 3px solid green;
+        }
+
+        .relative2 {
+            position: relative;
+            border: 3px solid red;
+            top: 20px;
+            /*-30*/
+            left: 670px;
+            background-color: #dfa5a5;
+            width: 500px;
+            height: 300px;
+        }
+
+        .fixe1 {
+            width: 100px;
+            height: 100px;
+            border: 3px solid purple;
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+        }
+
+        .parent {
+            position: relative;
+            border: 3px solid orange;
+            width: 500px;
+            height: 400px;
+        }
+
+        .absolute {
+            border: 3px solid purple;
+            position: absolute;
+            /*父類為position: relative 子類top為父類邊框，當*父類為 position: static; 子類top為瀏覽器大小*/
+            width: 200px;
+            height: 150px;
+            top: 0;
+            right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static1">Static</div>
+    <div class="relative1">Relative</div>
+    <div class="relative2">Relative2</div>
+    <div class="fixe1">fixed</div>
+    <div class="parent">parent
+        <div class="absolute">absolute</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .window {
+            background-color: aliceblue;
+        }
+
+        .box {
+            border: 5px solid #ffff;
+            border-radius: 20px;
+            padding: 10px;
+            margin: auto;
+            width: 60%;
+            background-color: white;
+            box-shadow: 5px 5px 5px gray;
+        }
+
+
+        .imgDiv {
+            border: 1px solid rgba(255, 255, 255, 0.432);
+            border-radius: 10px;
+            width: 170px;
+            float: left;
+            padding: 10px;
+            margin-right: 10px;
+            background-color: white;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            margin: 20px;
+            clear: both;
+            text-shadow: 3px 3px 3px gray;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        li {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window">
+        <article class="box">
+
+
+            <h1>發展歷史</h1>
+            <h2>早期樣式表的歷史</h2>
+            <!-- 浮動 -->
+            <div class="imgDiv">
+                <figure>
+                    <img style="width: 190;" src="images/170px-Håkon_Wium_Lie.jpg" alt="來賣萌的" title="公司首席技術長">
+                </figure>
+                <p>哈肯·維姆·萊</p>
+                <ol>
+                    <li>Opera公司首席技術長</li>
+                    <li>CSS網頁標準共同創始人</li>
+                </ol>
+            </div>
+
+            <p>HTML規範雖然規定了網頁中的標題、段落應該使用的標籤，但是沒有涉及這些內容應該以何種樣式(比如大小、位置、間距、縮排等屬性)呈現在瀏覽器中。從1990年代初HTML被發明開始，樣式表就以各種形式出現了。不同的瀏覽器結合了它們各自的樣式語言，讀者(也就是瀏覽網頁的使用者)可以使用這些樣式語言來調節網頁的顯示方式。一開始樣式表是給讀者用的，最初的HTML版本只含有很少的顯示屬性，讀者來決定網頁應該怎樣被顯示。
+            </p>
+            <p>1993年，Robert
+                Raisch提出了一種名為「RRP」的樣式規則建議。但這個RRP只允許網頁使用1個樣式表，不像現在的CSS能支援同時載入多個。不久後出現的Mosaic瀏覽器就採用增加新種類的HTML標籤實現樣式的表達，以滿足設計師的要求，這也與現在的CSS設計原則不符。隨著HTML內建的樣式功能的增加，外來定義樣式的語言逐漸減弱了。1993年發布的這個Mosaic瀏覽器是第一款使用者介面，並支援書籤、圖示按鈕和圖片顯示。[8]之前的瀏覽器都是純文字瀏覽器。即使在今天，只使用作業系統命令列內建的Telnet命令，也可以檢視網頁的原始碼。[9]
+            </p>
+            <p>後來，台灣人魏培源開發的ViolaWWW瀏覽器使用了一種規則具有層次巢狀性的樣式表，並第1個支援通過
+                <link>
+                標籤參照外部樣式表。FOSI最早支援以相對尺寸值來表示字型大小。函數式風格的DSSSL語言支援在樣式表中進行定義變數、繼承變數、定義函式等功能，但是語法複雜。1994年，全球資訊網之父提姆·柏內茲-李在歐美眾多高能物理研究者和技術人員的支援下，於美國麻省理工學院創立了全球資訊網協會（W3C），其職責是提供網路標準化建議。[10]1994年，Håkon
+                W Lie提出層疊HTML樣式表（Cascading HTML Style
+                Sheets，CHSS）。CHSS既支援使用者自訂樣式表，也支援網頁作者樣式表，而且可以滿足不同規則以百分比的方式組合使用。它的權重規則計算方式不夠直觀，當不同規則混合時會得到什麼實際效果並不容易從代碼中看出。1996年，出現了與CSS語法很像的表現指明語言（Presentation
+                Specification Language，簡稱"PSL 96"）。PSL 96除表達樣式外，也支援條件判斷等功能，還可根據對瀏覽器資訊的判斷來使用不同的樣式，但未獲得青睞。
+            </p>
+            <h2>CSS的誕生與發展</h6>
+                <p>1994年，哈肯·維姆·萊提出了CSS的最初建議。伯特·波斯當時正在設計一個叫做Argo的瀏覽器，他們決定一起合作設計CSS。當時已經有過一些樣式表語言的建議了，但CSS是第一個含有「層疊」的主意的。在CSS中，一個檔案的樣式可以從其他的樣式表中繼承下來。讀者在有些地方可以使用他自己更喜歡的樣式，在其他地方則繼承，或「層疊」作者的樣式。這種層疊的方式使作者和讀者都可以靈活地加入自己的設計，混合各人的愛好。哈肯·萊於1994年在芝加哥的一次會議上第一次展示了CSS的建議，1995年他與波斯一起再次展示這個建議。當時W3C剛剛建立，W3C對CSS的發展很感興趣，它為此組織了一次討論會。哈肯、波斯和其他一些人（比如微軟的托馬斯·里爾登）是這個專案的主要技術負責人。1996年底，CSS已經完成。1996年12月[來源請求]，哈肯·萊與伯特·波斯發布了CSS規範的第1個版本。這也成了哈肯·萊的博士論文的一部分。當時已有的主流瀏覽器的核心架構完全不適合解析CSS的語法，加上早年設計師濫用HTML標籤來表達樣式(這導致「標籤湯」(tagsoup)這一罵名的出現)、且漠不關心代碼校驗[11]，所以CSS等到幾年之後才流行起來。1998年，瀏覽器市場份額被微軟公司的Internet
+                    Explorer 4和網景公司的Netscape Navigator
+                    4兩大瀏覽器巨頭所占據。[10]CSS出現後，微軟的IE瀏覽器走在了逐步實現CSS第1版標準的前列。但是因為不重視問題修補，導致遺留Bug很多，這也使得IE瀏覽器長期為人們詬病。網景則把重心放在了網頁尾本語言的開發上，但很快被微軟模仿。網景在90年代末和微軟展開的瀏覽器大戰中最終一敗塗地，走向破產邊緣，但網景也成功推出了日後廣泛流行於網頁設計中的JavaScript語言。瀏覽器大戰使得網頁設計人員深受其害，因為不同瀏覽器支援的語法規則不太一樣，網頁設計人員不得不為IE瀏覽器和網景瀏覽器的瀏覽器分別設計一套網頁。[10]新成立的民間設計人員團體「網頁標準計劃」(WaSP)發動水軍將W3C的建議宣揚為標準，並批評還未加盟W3C標準的業界廠商。
+                </p>
+                <p>1997年初，W3C組織了專門管CSS的工作群組，其負責人是克里斯·里雷。這個工作群組開始討論第1版中沒有涉及到的問題，其結果是1998年5月出版的第2版規則。網頁標準計劃的7位成員成立了「CSS武士團」（CSS
+                    Samurai），指出Opera瀏覽器和IE瀏覽器在支援CSS方面存在的諸多問題。Opera公司著手解決了問題，但微軟並未解決。網頁標準計劃也積極勸說網景公司和Macromedia公司分別改進其產品對CSS標準的支援。2003年，Dave
+                    Shea推出了一個名為「CSS禪意花園」("CSS Zen
+                    Garden")的站點，向人們展示出僅通過應用不同頁面樣式規則，就可以實現對網頁藝術風格的煥然一新。這個網站在網頁設計相關人群中產生了不小影響。
+                </p>
+        </article>
+    </div>
+
+
+</body>
+
+</html>

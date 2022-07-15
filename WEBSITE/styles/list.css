@@ -1,0 +1,26 @@
+.list1 {
+    list-style-type: circle;
+    border: 3px dotted orange;
+    /* border-radius: 20px; */
+    /* border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+
+    border-radius: 20px 0px 20px 0px;
+}
+
+.list2 {
+    list-style-type: none;
+    list-style-image: url(../images/2.png);
+}
+
+.in {
+    background-color: orange;
+    list-style-position: inside
+}
+
+.out {
+    background-color: orange;
+    list-style-position: outside;
+    border: 3px dotted orange;
+    border-bottom-right-radius: 20px;
+}
